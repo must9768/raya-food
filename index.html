@@ -569,7 +569,7 @@ const _remoteMenu = (REMOTE.c || []).map(c => {
     }
   });
   return {id: cid, title: c.name, icon: c.icon || "🍽️", items: its.map(x => [x.name, _final(x)])};
-}).filter(c 
+}); 
 const MENU = _remoteMenu.length ? _remoteMenu : MENU_DEFAULT;
 const ITEMS = {};
 MENU.forEach(cat => cat.items.forEach(([name, price], i) => {
